@@ -1,0 +1,1087 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Vibo App</title>
+        <link rel="shortcut icon" href="imgs/Logo_Up.png"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/fa.min.css"/>
+        <link rel="stylesheet" href="css/hover.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <style>
+            .navbar-inverse
+            {
+                background-color: transparent;
+                border: none;
+            }
+            .navbar-inverse .navbar-brand img
+            {
+                width: 100px;
+                height: 40px;
+                margin-top: -8px;
+                filter: brightness(90%);
+            }
+            .navbar-inverse .navbar-brand img:hover
+            {
+                filter: brightness(100%);
+            }
+            .navbar-inverse .navbar-collapse ul li a
+            {
+                color: #d9d9d9;
+                font-weight: bold;
+            }
+            .navbar-inverse .navbar-collapse ul li a:hover
+            {
+                cursor: pointer;
+            }
+            .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form 
+            {
+                background-color: transparent;
+                border: 0px;
+                border-radius: 0px;
+                text-align: center;
+                font-size: 16px;
+            }
+            /***************************************************************************/
+            .download
+            {
+                padding-top: 75px;
+                padding-bottom: 50px;
+                margin-top: -70px;
+                height: 798px;
+                background-image: url(imgs/Background.png);
+                background-size: cover;
+                background-position: center -80px;
+            }
+            .download p
+            {
+                font-weight: bold;
+                color: #FFF;
+                font-size: 40px;
+                word-spacing: 1px;
+            }
+            .download span
+            {
+                color: #fff;
+            }
+            .download .btn
+            {
+                margin-top: 30px;
+                font-weight: bold;
+                width: 150px;
+            }
+            .download .btn-default
+            {
+                color: #000;
+                margin-right: 10px;
+            }
+            .download .btn-success
+            {
+                background-color: transparent;
+                border-color: #fff;
+            }
+            .download img
+            {
+                margin: auto;
+                padding-top: 50px;
+            }
+            /***************************************************************************/
+            .about
+            {
+                background-image: url(imgs/curve.png);
+                background-size: cover;
+                z-index: 5;
+                height: 400px;
+                margin-top: -131px;
+                padding-top: 450px;
+            }
+            .about i
+            {
+                font-weight: bold;
+                font-size: 60px;
+                color: #34abc5;
+                position: absolute;
+                animation: darsh 2s ease-in-out infinite;
+                margin-top: -305px;
+                cursor: pointer;
+            }
+            .about .about-img img
+            {
+                margin: 0;
+                height: auto;
+            }
+            .about .about-1
+            {
+                border: 1px solid #e3e3e3;
+                border-radius: 10px;
+                box-shadow: 2px 2px 6px #7e7e7e;
+                padding: 20px;
+                margin-bottom: 90px;
+                width: 300px;
+                margin-top: -125px;
+                position: static;
+            }
+            .about .about-2
+            {
+                border: 1px solid #e3e3e3;
+                border-radius: 10px;
+                box-shadow: 2px 2px 6px #7e7e7e;
+                padding: 20px;
+                margin-bottom: 90px;
+                width: 300px;
+                margin-left: -45px;
+                position: static;
+            }
+            .about .about-3
+            {
+                border: 1px solid #e3e3e3;
+                border-radius: 10px;
+                box-shadow: 2px 2px 6px #7e7e7e;
+                padding: 20px;
+                margin-bottom: 90px;
+                width: 300px;
+                position: static;
+            }
+            .about .about-4
+            {
+                border: 1px solid #e3e3e3;
+                border-radius: 10px;
+                box-shadow: 2px 2px 6px #7e7e7e;
+                padding: 20px;
+                margin-bottom: 90px;
+                width: 300px;
+                margin-left: -45px;
+                position: static;
+            }
+            .about .about-1 img,.about .about-2 img,.about .about-3 img,.about .about-4 img
+            {
+                margin: auto
+            }
+            .about h3
+            {
+                font-weight: bold;
+            }
+            .about p
+            {
+                font-size: 18px;
+                color: #7a7a7a
+            }
+            /***************************************************************************/
+            .info
+            {
+                padding-bottom: 80px;
+            }
+            .info .info-1
+            {
+                direction: rtl;
+                padding-right: 25px;
+                padding-top: 30px;
+                margin-bottom: 50px;
+            }
+            .info .info-1 h2
+            {
+                font-weight: bold;
+                padding-bottom: 20px;
+            }
+            .info .info-1 p
+            {
+                font-size: 18px;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                line-height: 25px;
+                padding: 20px 0px 20px 15px;
+                color: #737373;
+            }
+            .info .info-1 .btn
+            {
+                font-weight: bold;
+                background-color: #47c3fa;
+                height: 45px;
+                line-height: 30px;
+                width: 200px;
+                font-size: 16px;
+                word-spacing: 1px;
+                
+            }
+            .info .img-1 div.active
+            {
+                background-color: #47c3fa;
+            }
+            .info .img-1 div.active p
+            {
+                color: #fff;
+                font-size: 16px;
+                padding: 10px 55px;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+            }
+            .info .img-1 div
+            {
+                box-shadow: 2px 2px 6px #7e7e7e;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            .info .img-1 div img
+            {
+                padding: 20px 20px 0px 20px;
+                float: left
+            }
+            .info .img-1 div h3
+            {
+                font-size: 16px;
+                font-weight: 550;
+                padding-top: 5px;
+            }
+            .info .info-2
+            {
+                padding-top: 105px;
+            }
+            .info .img-2
+            {
+                padding-top: 85px;
+            }
+            .info .info-2 div
+            {
+                padding-bottom: 10px;
+            }
+            .info .info-2 div img
+            {
+                float: left;
+                padding-right: 10px;
+            }
+            .info .info-2 h3
+            {
+                font-weight: bold;
+                padding-bottom: 20px;
+                font-size: 30px;
+                text-shadow: 2px 2px 2px #b8b8b8;
+            }
+            .info .info-2 div span
+            {
+                font-size: 16px;
+                font-weight: 550;
+                padding-top: 5px;
+            }
+            .info .info-2 p
+            {
+                color: #7b7b7b;
+                font-size: 16px;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                padding: 15px 40px 0px 0px;
+            }
+            .info .img-2
+            {
+                padding-right: 25px
+            }
+            /***************************************************************************/
+            .app
+            {
+                background-image: url(imgs/Vector%20Bg.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+            .app .img img
+            {
+                height: 500px;
+                margin: auto;
+            }
+            .app .info
+            {
+                padding-top: 75px;
+            }
+            .app .info h3
+            {
+                font-weight: bold;
+                padding-bottom: 20px;
+                font-size: 30px;
+                text-shadow: 2px 2px 2px rgba(184, 184, 184, 0.71);
+            }
+            .app .info p
+            {
+                color: #1f1f1f;
+                font-size: 16px;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                padding: 15px 0px 20px 0px;
+            }
+            .app .info .btn
+            {
+                width: 180px;
+                height: 50px;
+                margin-right: 10px;
+            }
+            .app .info .appstore
+            {
+                background-image: url(imgs/iOS.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 8px;
+            }
+            .app .info .googleplay
+            {
+                background-image: url(imgs/Google.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 8px;
+            }
+            .app span.btn
+            {
+                background-color:#fa5477;
+                border-radius: 0px;
+                font-weight: bold;
+                color: #fff;
+                height: 50px;
+                line-height: 35px;
+                width: 300px;
+                margin-bottom: -122px;
+            }
+            .app .info .appstore:hover,.app .info .googleplay:hover
+            {
+                filter: opacity(80%);
+                filter: contrast(50%)
+            }
+            /***************************************************************************/
+            .footer
+            {
+                padding-top: 100px;
+            }
+            .footer .cont
+            {
+                width: 80%;
+                margin: auto;
+            }
+            .footer .feat
+            {
+                float: left;
+                width: 25%;
+                text-align: center;
+            }
+            .footer .feat h3
+            {
+                font-weight: bold;
+                padding-bottom: 10px;
+                font-size: 20px;
+                text-shadow: 2px 2px 2px rgba(184, 184, 184, 0.71);
+            }
+            .footer .feat ul li
+            {
+                color: #665fb7;
+                font-size: 16px;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                padding: 3px;
+                font-weight: 505;
+            }
+            .footer .feat ul li:hover
+            {
+                cursor: pointer;
+                color: #98a2ff;
+            }
+            /***************************************************************************/
+            .subscribe
+            {
+                padding-top: 50px;
+                padding-bottom: 100px;
+                position: relative;
+            }
+            .subscribe h3
+            {
+                font-weight: bold;
+                padding-bottom: 10px;
+                font-size: 35px;
+                text-shadow: 2px 2px 2px rgba(184, 184, 184, 0.71);
+            }
+            .subscribe p
+            {
+                color: #3e3e3e;
+                font-size: 16px;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                padding: 0px 0px 20px 0px;
+            }
+            .subscribe .btn
+            {
+                font-weight: bold;
+                background-color: #47c3fa;
+                height: 45px;
+                line-height: 30px;
+                width: 200px;
+                font-size: 16px;
+                word-spacing: 1px;
+                color: #000;
+                position: absolute;
+                right: 175px;
+                border-radius: 2px;
+            }
+            /***************************************************************************/
+            .copyright
+            {
+                height: 50px;
+                background-color: #233148;
+                position: relative;
+            }
+            .copyright span
+            {
+                font-size: 14px;
+                font-weight: 550;
+                color: #fff;
+                position: absolute;
+                top: 11px;
+                left: 50px;
+            }
+            .copyright ul
+            {
+                position: absolute;
+                right: 50px;
+            }
+            .copyright ul li
+            {
+                float: left;
+            }
+            .copyright ul li img
+            {
+                padding:0px 25px;
+                margin-top: 11px
+            }
+            .copyright ul li img:hover
+            {
+                cursor: pointer;
+                filter: opacity(50%)
+            }
+            /***************************************************************************/
+            @keyframes darsh
+            {
+                0%,100%{padding: 6px 0px}
+                
+                
+                50%{padding: 18px 0px}
+                
+            }
+            /****************************************************************************************/
+            /****************************************************************************************/
+            /****************************************************************************************/
+            @media (max-width: 767px)
+            {
+                .download
+                {
+                    background-position: center -90px;
+                    padding-top: 130px;
+                }
+                .download p
+                {
+                    padding-bottom: 5px;
+                    font-size: 35px;
+                    color: red;
+                }
+                .download span:nth-of-type(1)
+                {
+                    font-size: 9px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    word-spacing: 1px;
+                }
+                .download img
+                {
+                    height: 390px;
+                    border-radius: 0px 0px 10px 10px;
+                    margin-top: 0px;
+                }
+                .download .btn
+                {
+                    margin-top: 60px;
+                }
+                .about .about-info
+                {
+                    height: 700px;
+                    position: relative;
+                }
+                .about .about-img img
+                {
+                    margin: auto;
+                    height: 500px;
+                    margin-top: -80px;
+                }
+                .about .about-1
+                {
+                    margin-top: 50px;
+                    position: absolute;
+                    right: 20px;
+                }
+                .about .about-2
+                {
+                    margin-left: 0px;
+                    margin-top: 50px;
+                    position: absolute;
+                    left: 20px;
+                    top: 350px;
+                }
+                .about .about-3
+                {
+                    margin-top: 400px;
+                    position: absolute;
+                    right: 20px;
+                    top: -350px;
+                }
+                .about .about-4
+                {
+                    margin-left: 0px;
+                    margin-top: 50px;
+                    position: absolute;
+                    left: 20px;
+                    top: 350px;
+                }
+                .info .info-1
+                {
+                    text-align: center;
+                    padding-bottom: 50px;
+                }
+                .info .info-2
+                {
+                    text-align: center
+                }
+                .info .info-2 div
+                {
+                    display: inline-block;
+                    padding: 10px;
+                }
+                .app
+                {
+                    text-align: center;
+                    padding-top: 50px;
+                }
+                .app .info
+                {
+                    padding-top: 35px;
+                }
+                .app .info h3
+                {
+                    padding-bottom: 0px;
+                }
+                .app .info p
+                {
+                    padding-bottom: 0px;
+                }
+                .app .img img
+                {
+                    height: 350px;
+                }
+                .app .info .appstore,.app .info .googleplay
+                {
+                    margin: 20px 10px 0px 0px;
+                }
+                .footer .cont
+                {
+                    width: 90%;
+                }
+                .footer .feat h3 
+                {
+                    padding-bottom: 8px;
+                    font-size: 13px;
+                    text-shadow: 0px 0px 1px rgb(0 117 255/79%);
+                }
+                .footer .feat ul li
+                {
+                    font-weight: 550;
+                    font-size: 9px;
+                    padding: 4px;
+                }
+                .subscribe .btn
+                {
+                    display: block;
+                    margin: auto;
+                    position: static;
+                }
+                .copyright ul
+                {
+                    right: 10px;
+                }
+                .copyright ul li img
+                {
+                    padding: 0px 8px;
+                }
+                .copyright span
+                {
+                    left: 10px;
+                }
+                .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form 
+                {
+                    background-color: rgb(112, 200, 255);
+                    border: 2px solid #001dff;
+                    border-radius: 0px 0px 10px 10px;
+                    text-align: center;
+                    font-size: 16px;
+                }
+                .container > .navbar-header
+                {
+                    background-color: #00c3c3;
+                    border-bottom: 1px solid #00aefb;
+                }
+            }
+            @media (min-width: 768px) and (max-width: 991px)
+            {
+                .download
+                {
+                    background-position: center -90px;
+                    padding-top: 130px;
+                }
+                .download p
+                {
+                    padding-bottom: 5px;
+                    font-size: 35px;
+                    color: blue;
+                }
+                .download span:nth-of-type(1)
+                {
+                    font-size: 10px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    word-spacing: 1px;
+                }
+                .download img
+                {
+                    height: 400px;
+                    border-radius: 0px 0px 10px 10px;
+                    margin-top: 15px;
+                }
+                .download .btn
+                {
+                    margin-top: 60px;
+                }
+                .about .about-info
+                {
+                    height: 400px;
+                    position: relative;
+                    margin-top: 100px;
+                }
+                .about .about-img img
+                {
+                    margin: auto;
+                    height: 500px;
+                    margin-top: -80px;
+                }
+                .about .about-1
+                {
+                    margin-top: 50px;
+                    position: absolute;
+                    right: 0px;
+                }
+                .about .about-2
+                {
+                    margin-left: 0px;
+                    margin-top: 50px;
+                    position: absolute;
+                    left: 40px;
+                    top: 100px;
+                }
+                .about .about-3
+                {
+                    margin-top: 400px;
+                    position: absolute;
+                    right: 20px;
+                    top: -500px;
+                }
+                .about .about-4
+                {
+                    margin-left: 0px;
+                    margin-top: 50px;
+                    position: absolute;
+                    left: 20px;
+                    top: -50px;
+                }
+                .info .info-1
+                {
+                    text-align: center;
+                    padding-bottom: 50px;
+                }
+                .info .info-2
+                {
+                    text-align: center
+                }
+                .info .info-2 div
+                {
+                    display: inline-block;
+                    padding: 10px;
+                }
+                .app
+                {
+                    text-align: center;
+                    padding-top: 50px;
+                }
+                .app .info
+                {
+                    padding-top: 35px;
+                }
+                .app .info h3
+                {
+                    padding-bottom: 0px;
+                }
+                .app .info p
+                {
+                    padding-bottom: 0px;
+                }
+                .app .img img
+                {
+                    height: 350px;
+                }
+                .app .info .appstore,.app .info .googleplay
+                {
+                    margin: 20px 10px 0px 0px;
+                }
+                .footer .cont
+                {
+                    width: 90%;
+                }
+                .footer .feat h3 
+                {
+                    padding-bottom: 8px;
+                    font-size: 15px;
+                    text-shadow: 0px 0px 1px rgb(0 117 255/79%);
+                }
+                .footer .feat ul li
+                {
+                    font-weight: 550;
+                    font-size: 11px;
+                    padding: 4px;
+                }
+                .subscribe .btn
+                {
+                    display: block;
+                    margin: auto;
+                    position: static;
+                }
+                .copyright ul
+                {
+                    right: 20px;
+                }
+                .copyright ul li img
+                {
+                    padding: 0px 12px;
+                }
+                .copyright span
+                {
+                    left: 20px;
+                }
+                .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form 
+                {
+                    background-color: transparent;
+                    border: 0px;
+                    border-radius: 0px;
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+            @media (min-width: 992px) and (max-width: 1199px)
+            {
+                .download
+                {
+                    background-position: center -90px;
+                }
+                .download p
+                {
+                    color: green;
+                }
+                .download span:nth-of-type(1)
+                {
+                    font-size: 11px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    word-spacing: 1px;
+                }
+                .download img
+                {
+                    height: 450px;
+                    border-radius: 0px 0px 10px 10px;
+                    margin-top: 30px;
+                }
+                .download .btn
+                {
+                    margin-top: 60px;
+                }
+                .app
+                {
+                    text-align: center;
+                    padding-top: 50px;
+                }
+                .app .info
+                {
+                    padding-top: 35px;
+                }
+                .app .info h3
+                {
+                    padding-bottom: 0px;
+                }
+                .app .info p
+                {
+                    padding-bottom: 0px;
+                }
+                .app .img img
+                {
+                    height: 350px;
+                }
+                .app .info .appstore,.app .info .googleplay
+                {
+                    margin: 20px 10px 0px 0px;
+                }
+                .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form 
+                {
+                    background-color: transparent;
+                    border: 0px;
+                    border-radius: 0px;
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+            @media (min-width: 1200px)
+            {
+                .download img
+                {
+                    border-radius: 0px 0px 10px 10px;
+                    margin-top: 5px;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+    <!-------------------------------------------------------------------------------------------------------------------->
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle = "collapse" data-target = "#aaa">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="imgs/Logo.png"/></a>
+                </div>
+                <div class="navbar-collapse collapse navbar-right" id="aaa">
+                    <ul class="nav navbar-nav">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>App</a></li>
+                        <li><a>Info</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-------------------------------------------------------------------------------------------------------------------->
+        <section class="download text-center">
+            <div class="container">
+                <p>
+                    choose a better way to <br/> represent your app
+                </p>
+                <span>vestibulum ac diam sit amet quam vehicula elementum.</span><br/>
+                <span class="btn btn-default">Download Free</span>
+                <span class="btn btn-success">Contact Us</span>
+                <img class="img-responsive" src="imgs/Reflection.png"/>
+            </div>
+        </section>
+    <!-------------------------------------------------------------------------------------------------------------------->
+        <section class="about text-center">
+            <div class="container">
+                <i class="fa fa-chevron-down"></i>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="about-img">
+                            <img class="img-responsive" src="imgs/phone.png"/>
+                        </div>
+                    </div>
+                    
+                        <div class="col-xs-12 col-md-4">
+                            <div class="about-info">
+                                <div class="about-1">
+                                <img class="img-responsive" src="imgs/Icon1.png"/>
+                                <h3>First 7 Days Free</h3>
+                                <p class="lead">
+                                    cars ultricies ligula sed magna dictum porta. Nulla Porttitor accumsan tincidunt. Vestibu-lum ac diamdo.
+                                </p>
+                            </div>
+
+                            <div class="about-2">
+                                <img class="img-responsive" src="imgs/Icon2.png"/>
+                                <h3>Modern Flat Design</h3>
+                                <p class="lead">
+                                    cars ultricies ligula sed magna dictum porta. Nulla Porttitor accumsan tincidunt. Vestibu-lum ac diamdo.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-4">
+                            <div class="about-info">
+                                <div class="about-3">
+                                <img class="img-responsive" src="imgs/Icon3.png"/>
+                                <h3>Fully Support</h3>
+                                <p class="lead">
+                                    cars ultricies ligula sed magna dictum porta. Nulla Porttitor accumsan tincidunt. Vestibu-lum ac diamdo.
+                                </p>
+                            </div>
+
+                            <div class="about-4">
+                                <img class="img-responsive" src="imgs/Icon4.png"/>
+                                <h3>User Friendly</h3>
+                                <p class="lead">
+                                    cars ultricies ligula sed magna dictum porta. Nulla Porttitor accumsan tincidunt. Vestibu-lum ac diamdo.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+            </div>
+            </div>
+        </section>
+    <!-------------------------------------------------------------------------------------------------------------------->
+        <section class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="info-1">
+                            <h2 class="h1">Stable And Ready</h2>
+                            <p class="lead">
+                            Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam.
+                            </p>
+                            <span class="btn btn-info">Download Free</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-md-6">
+                        <div class="img-1">
+                            <div>
+                                <img class="img-responsive" src="imgs/Icon11.png"/>
+                                <h3> Made With Love</h3>
+                            </div>
+                            
+                            <div class="active">
+                                <img class="img-responsive" src="imgs/Icon22.png"/>
+                                <h3> Free of Use</h3>
+                                <p class="lead">
+                                Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <img class="img-responsive" src="imgs/Icon33.png"/>
+                                <h3> Fully Support Avaliable</h3>
+                            </div>
+                            
+                            <div>
+                                <img class="img-responsive" src="imgs/Icon44.png"/>
+                                <h3> Flat and Modern Ui & Ux</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-md-6">
+                        <div class="img-2">
+                            <img class="img-responsive" src="imgs/img-2.png"/>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-md-6">
+                        <div class="info-2">
+                            <h3>Everything You Need</h3>
+                            <div><img class="img-responsive" src="imgs/right.png"/><span>Android</span></div>
+                            <div><img class="img-responsive" src="imgs/right.png"/><span>Iphone</span></div>
+                            <p class="lead">
+                            Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-------------------------------------------------------------------------------------------------------------------->
+        <section class="app">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="img">
+                            <img class="img-responsive" src="imgs/phone.png"/>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-md-6">
+                        <div class="info">
+                            <h3>Now Available</h3>
+                            <p class="lead">
+                            Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. quam vehicula elementum sed sit ametsuada.
+                            </p>
+                            <span class="btn btn-default appstore"></span>
+                            <span class="btn btn-default googleplay"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class=" center-block btn btn-danger">GET THE APP TODAY</span>
+        </section>
+    <!-------------------------------------------------------------------------------------------------------------------->
+        <section class="footer">
+            <div class="container">
+                <div class="cont">
+                    <div class="feat">
+                        <h3>Company</h3>
+                        <ul class="list-unstyled">
+                            <li>Home</li>
+                            <li>Jobs</li>
+                            <li>Press</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feat">
+                        <h3>Development</h3>
+                        <ul class="list-unstyled">
+                            <li>IOS</li>
+                            <li>Android</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feat">
+                        <h3>Community</h3>
+                        <ul class="list-unstyled">
+                            <li>Social</li>
+                            <li>Forum</li>
+                            <li>Contact</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feat">
+                        <h3>Info</h3>
+                        <ul class="list-unstyled">
+                            <li>Terms of Service</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-------------------------------------------------------------------------------------------------------------------->
+        <section class="subscribe text-center">
+            <div class="container">
+                <h3>Get In Touch</h3>
+                <p class="lead">Subscribe to our newsletter and get notification for upcoming coll sutff.</p>
+                <span class="btn btn-info">COUNT ME IN</span>
+            </div>
+        </section>
+    <!-------------------------------------------------------------------------------------------------------------------->
+        <section class="copyright">
+            <span>&copy; 2020 - Darsh, All Right Reserved</span>
+            <ul class="list-unstyled">
+                <li><img class="img-responsive" src="imgs/Facebook.png"/></li>
+                <li><img class="img-responsive" src="imgs/Twitter.png"/></li>
+                <li><img class="img-responsive" src="imgs/Dribble.png"/></li>
+                <li><img class="img-responsive" src="imgs/Google-icon.png"/></li>
+                <li><img class="img-responsive" src="imgs/Youtube.png"/></li>
+            </ul>
+        </section>
+    <!-------------------------------------------------------------------------------------------------------------------->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/WOW.js"></script>
+        <script>WOW().init();</script>
+    </body>
+</html>
